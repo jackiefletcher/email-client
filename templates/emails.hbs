@@ -1,0 +1,14 @@
+<h2>Nobody's Inbox</h2>
+
+<table class="table table-hover">
+  <tr>
+    <th>Sender</th>
+    <th>Subject</th>
+  </tr>
+  {{#each email in model}}
+    <tr>
+        <td>{{email.sender}}</td>
+        <td>{{#link-to 'message' email}} {{email.subject}} {{/link-to}}</td>
+    </tr>
+  {{/each}}
+</table>
