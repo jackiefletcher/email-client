@@ -4,12 +4,14 @@
   <tr>
     <th>Sender</th>
     <th>Subject</th>
+    <th>Date Sent</th>
   </tr>
   <tbody>
   {{#each email in model}}
     <tr>
         <td class="sender">{{email.sender}}</td>
         <td>{{#link-to 'message' email}} {{email.subject}} {{/link-to}}</td>
+        <td>{{email.date}}</td>
     </tr>
   {{/each}}
 </tbody>
