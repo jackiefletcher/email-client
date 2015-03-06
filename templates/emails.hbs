@@ -1,14 +1,18 @@
 <h2>Nobody's Inbox</h2>
 
-<table class="table table-hover">
+<table class="table table-hover table-condensed">
   <tr>
     <th>Sender</th>
     <th>Subject</th>
   </tr>
+  <tbody>
   {{#each email in model}}
     <tr>
-        <td>{{email.sender}}</td>
+        <td class="sender">{{email.sender}}</td>
         <td>{{#link-to 'message' email}} {{email.subject}} {{/link-to}}</td>
     </tr>
   {{/each}}
+</tbody>
 </table>
+
+<p>{{outlet}}</p>

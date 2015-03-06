@@ -1,0 +1,15 @@
+.sender {
+  width: 150px;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-right {
+  padding-right: 10px;
+}
+
+.navbar-left {
+  font-size: 1.25em;
+}
